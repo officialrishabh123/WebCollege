@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+            padding:0px;
+            margin:0px;
+            
+        }
+        .head{
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .head .logo img{
+            width:100px;
+            height:100px;
+        }
+        .head .text{
+                color:#12cdef;
+                padding:20px;
+                text-align: center;
+        }
+        .head .text h1{
+            color:tomato;
+            font-weight: 900px;
+            padding-bottom: 10px;
+        }
+        
+        .head .text h1:hover{
+            border-bottom: 2px solid chocolate;
+            cursor:pointer;
+          
+        }
+        .head .text p{
+            padding:5px;
+            font-weight: 600px;
+        }
+        .head .right img{
+            border-radius:50px;
+        }
+        .row1 img{
+          
+            width:100%;
+            height:100%;
+        }
+        .row1{
+            display: flex;
+            flex-wrap: wrap;
+           
+            justify-content: center;
+        
+        }
+        .row1 .col1{
+            margin-top: 30px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 20px;
+            font-family:cursive;
+            padding-top:60px;
+            width:80%;
+            padding-left:20px;
+            border-radius: 20px;
+                       
+        }
+        .row1 .col1 h1{
+            padding-left: 20px;
+           
+        }
+        
+        .row1 .col1 h1:hover{
+            border-bottom: 2px solid chocolate;
+            width:400px;
+
+        }
+        .row1 .col2 img{
+            height:500px;
+            
+        } 
+        .row2{
+        display: flex;
+        background-color:khaki;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        }
+        .row2 .col3{
+            margin:30px 0px;
+        }
+      
+        .row2 .col4{
+            width:50%;
+            padding:30px
+        }
+        .row2 .col4 h1:hover{
+            border-bottom: 2px solid chocolate;
+            width:350px;
+            
+        }
+        .row3{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+        }
+        .row3 .col5{
+            text-align: center;
+            margin-top:100px;
+            font-weight: 800;
+        }
+        .row3 .col5 h1:hover{
+            font-size: 40px;
+            border-bottom: 2px solid chocolate;
+            width:300px;
+
+        }
+        .row3 .col5 p{
+            font-size: 20px;
+            padding:10px 0px;
+            font-weight: 200px;
+        }
+        .row3 .col6 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .row3 .col6 .pic {
+            align-items: center;
+            margin:30px 30px;
+            padding:10px 20px;
+            border-radius: 20px;
+            box-shadow: inset 1px 2px 7px chocolate,
+                        inset -1px -2px 7px chocolate;
+            font-size: 20px;
+        }
+        .row4{
+            width:100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            background:radial-gradient(#fff,#12defc,#333);
+        }
+
+        .row4 .col1{
+            text-align: center;
+            padding-top: 60px;
+            font-family: cursive;
+            font-weight: bolder;
+        
+        }
+        .row4 .col1 h1{
+            margin-bottom: 30px;
+            color: chocolate;
+        }
+        
+        .row4 .col1 h1:hover{
+            border-bottom: 2px solid chocolate;
+            width:700px;
+            }
+            .row4 .col1 p{
+                color: #333;
+            }
+        
+        .row4 .col2 img{
+            width:500px;
+            margin: 30px 60px;
+            border-radius: 100%;
+            box-shadow:  4px 2px 7px chocolate,
+                        -4px -1px 7px chocolate;
+           
+        }
+        .row5{
+            display: inline-block;
+            width: 100%;
+            background-color: darkgray;
+        }
+        .row5 .col1{
+            text-align: center;
+            padding:100px;
+        }
+        .row5 .col1 p{
+            padding-top: 10px;
+            font-size: 25px;
+        }
+        .row5 .col2{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .row5 .col2 .pic1 img{
+             width:300px;
+             height:200px;
+            margin:20px 10px ;
+            box-shadow: 4px 2px 7px #fff,
+                        -1px 1px 7px  #fff;
+           border-radius: 50px;
+        }
+        .row6{
+           display: flex;
+          
+           align-items: center;
+           justify-content: space-evenly;
+           background-color: salmon;
+           margin-top: 50px;
+           font-family: cursive;
+           flex-wrap: wrap;
+        }
+        .row6 .col1{
+            padding-top: 30px;
+            text-align: center;
+        }
+        .row6 .col1 h1:hover{
+            border-bottom: 3px solid chocolate;
+            margin-bottom: 10px;
+        }
+        .row6 .col1 p{
+            font-size: 20px;
+        }
+        .row6 .col2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .row6 .col1 .pic1 img{
+            color:red;
+            padding:10px;
+
+        }
+        .col3 img{
+            width: 300px;
+            padding-bottom: 20px;
+        }
+        .footer{
+            background-color: black;
+            color:white;
+            padding:40px 30px;
+            letter-spacing: 1px ;
+            font-family: cursive;
+        }
+      
+       
+       .side-bar{
+
+            background-color: tomato;
+            position: absolute;
+            height: 1000%;
+            overflow: hidden;
+            right: 0px;
+            transition: max-height 2s;
+            width: 200px;
+        }
+
+        .side-bar img{
+            width:100px;
+            margin: 50px;
+        }
+        .side-bar img:hover{
+            transform:scale(1.2);
+        }
+        .side-bar ul{
+            list-style: none;
+            padding: 10px ;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .side-bar ul li {
+           margin-bottom: 10px;
+            width: 100%;
+           height: 30px;
+           
+        }
+        
+        .side-bar ul li a{
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
+        .side-bar ul li:hover{
+            border-bottom: 2px solid yellow;
+           
+        }
+        .row7{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:100%;
+            flex-wrap:wrap;
+            margin: 30px 0px;
+            background-color: aquamarine;
+            
+        }
+        .row7 .col1{
+          padding:10px 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin:10px 20px;
+        }
+        .row7 .col1 input[type=text]{
+            width:100%;
+            padding: 10px;
+            margin: 10px 0px;
+            text-align: center;
+           
+            font-size: 17px;
+            font-family: cursive;
+            border:2px solid tomato;
+        }
+        .row7 .col1 input[type=submit]{
+           border: 2px solid tomato;
+            padding: 10px;
+            margin:15px 30px;
+            width:80%;
+            font-size: 17px;
+            color: #fff;
+            background-color: #333;
+            border-radius: 10px;
+            font-family: cursive;
+            letter-spacing: 1px;            
+
+           }
+
+        .row7 .col2 img{
+            width:400px;
+            padding: 30px 100px;
+           
+        
+        }
+      
+    </style>
+    
+</head>
+<body>
+    <div class="side-bar" id="MenuItems">
+        <img src="./logo.png" onclick="menutogg()">
+        <ul>
+           
+            <li><a href="#r1">Home</a></li>
+            <li><a href="#r2">AboutUs</a></li>
+            <li><a href="#r3">Contactus </a></li>
+            <li><a href="#r4">Our society</a></li>
+            <li><a href="#">Axis erp</a></li>
+            
+        </ul>
+    </div>
+    <div class="head" id="r1">
+        <div class="logo">
+            <img src="./logo.png"  >
+        </div>
+        <div class="text">
+            <h1>AXIS INSTITUTE OF TECHNOLOGY AND MANAGEMENT </h1>
+            <p>The Best Colleges In Kanpur  <br>A good opportunity for Student</p>
+            <p>TOMARROW FIRST</p>
+        </div>
+        <div class="right">
+            <img src="./menu.png" id="menu1" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+
+    <div class="row1" >
+        <div class="col1">
+            <h1>Our Feature</h1>
+            Axis colleges is the best colleges it provide many facilites and many facalties Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam minus iure asperiores non odit nam dolor autem quam repellendus!
+        </div> 
+        <div class="col2">
+            <img src="./background.png" >
+        </div>
+       
+    </div>
+    <div class="row2" id="r2">
+        <div class="col3">
+            <img src="./IMG-20200813-WA0020.jpg" >
+        </div>
+        <div class="col4">
+            <h1>Our Achitecture</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat placeat soluta veniam nam eveniet sunt odit molestiae illo laudantium recusandae, voluptatum natus accusamus ut dignissimos mollitia, deleniti labore numquam. Ea recusandae ad accusantium maiores!</p>
+        </div>
+    </div>
+    <div class="row3">
+        <div class="col5">
+            <h1>Our Goal</h1>
+            <p>We can study in three approch</p>
+        </div>
+        <div class="col6">
+            <div class="pic">
+                 <img src="./pic-1.png" >
+                 <p>Think A new Idea <br>Implemented Our Goal In Axis Vision</p>
+            </div>
+            <div class="pic">
+                <img src="./pic-2.png" >
+                <p>We sharp Your Mind That You can Think Logically and practically</p>
+           </div>
+           <div class="pic">
+                <img src="./pic-3.png" >
+                <p>Achieve your Goal </p>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="row4">
+        <div class="col1">
+            <h1> Our Nation One Eduction</h1>
+            <p>जन गण मन अधिनायक जय हे<br>
+                भारत भाग्यविधाता<br>
+                पंजाब सिन्धु गुजरात मराठा<br>
+                द्राविड़ उत्कल बंगा<br>
+                विन्ध्य हिमाचल यमुना गंगा<br>
+                उच्छल जलधि तरंगा<br>
+                तव शुभ नामे जागे<br>
+                तव शुभ आशीष मागे<br>
+                गाहे तव जयगाथा<br>
+                
+                जन गण मंगलदायक जय हे<br>
+                भारत भाग्यविधाता<br>
+                जय हे, जय हे, जय हे<br>
+                जय जय जय जय हे!<br>
+                
+                 </p>
+        </div>
+        <div class="col2">
+            <img src="./IMG-20200813-WA0019.jpg" >
+        </div>
+    </div>
+    <div class="row5" id="r4">
+        <div class="col1">
+            <h1>Our Society</h1>
+            <p>We Create many society for Help others who can not affort food and education<br>Our Axis provide free education and student based poket money mny other fearure provide in axis society</p>
+        </div>
+        <div class="col2">
+            <div class="pic1">
+                <img src="./IMG_7741.JPG" >
+            </div> 
+            <div class="pic1">
+                <img src="./IMG_7765.JPG" >
+            </div> 
+            <div class="pic1">
+                <img src="./IMG_7779.JPG" >
+            </div> 
+            <div class="pic1">
+                <img src="./IMG_7788.JPG" >
+            </div>     
+            <div class="pic1">
+                <img src="./IMG_7803.JPG" >
+            </div>  
+            <div class="pic1">
+                <img src="./IMG_7766.JPG" >
+            </div> 
+            <div class="pic1">
+                <img src="./IMG_7775.JPG" >
+            </div>  
+            <div class="pic1">
+                <img src="./IMG_7777.JPG" >
+            </div> 
+            <div class="pic1">
+                <img src="./IMG_7788.JPG" >
+            </div>        
+
+        </div>
+    </div>
+    <div class="row6">
+        <div class="col1">
+            <h1>Our Aim</h1>
+            <p>We Prepare top companies <br>You all achieve these top companies <br>Come Join And Get Success !!!<br>   "Success is waiting for you" </p>
+            <div class="col2">
+                <div class="pic1">
+                    <img src="./facebook.png" >
+                </div>
+                <div class="pic1">
+                    <img src="./linkedin.png" >
+                </div>
+                <div class="pic1">
+                    <img src="./twitter.png" >
+                </div>
+                <div class="pic1">
+                    <img src="./instagram.png" >
+                </div>
+            </div>
+        </div>
+     
+        <div class="col3">
+              <img src="./course.png" alt="">
+         </div>        
+    </div>
+    <div class="row7" id="r3">
+        <div class="col1">
+            <form >
+                <div>
+                    <input type="text" placeholder="Enter Your name">
+                </div>
+                <div>
+                    <input type="text" placeholder="Enter Your E-mail">
+                </div>
+                <div>
+                    <input type="text" placeholder="Enter Your Contact">
+                </div>
+                <div>
+                    <input type="text" placeholder="Enter Your Address">
+                </div>
+                <div>
+                     <input type="text" placeholder="Enter your Intrest">
+                </div>
+                <div>
+                    <input type="submit" value="Submit  :)">
+                </div>
+            </form>
+        </div>
+        <div class="col2">
+            <img src="./contact.png" >
+        </div>
+    </div>
+    <div class="footer">
+        <div class="col1">
+            <h1>Address</h1>
+            <p>Hathipur Rooma,Kanpur </p>
+            <p>Pin-code :203377</p>
+            <p>+91 88659719929 9932446746</p><br><br><hr>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+         MenuItems.style.maxHeight="0px";
+         function menutoggle(){
+             if(MenuItems.style.maxHeight== "0px")
+             {
+                MenuItems.style.maxHeight="100%";
+             }
+             else{
+                MenuItems.style.maxHeight="0px";
+             }
+         }
+         var MenuItem = document.getElementById("MenuItems");
+
+         MenuItem.style.maxHeight="0px";
+         function menutogg(){
+             if(MenuItems.style.maxHeight== "0px")
+             {
+                MenuItems.style.maxHeight="100%";
+             }
+             else{
+                MenuItems.style.maxHeight="0px";
+             }
+         }
+    </script>
+</body>
+</html>
